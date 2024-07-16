@@ -22,11 +22,12 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    animation: dropIn 1s ease-out;
+
+    background-color: #677D6A;
 }
 
 header {
-    background-color: black;
+    background-color: #1A3636;
     color: white;
     display: flex;
 
@@ -42,7 +43,6 @@ header {
     /* border: 10px wheat solid; */
     height: fit-content;  
     font-size: 9vw;
-    transform: translateX(-200px) translateY(100px);
 
 }
 
@@ -51,6 +51,20 @@ header {
     display: flex;
     height: 100%;
     justify-content: center;
+    animation: dropIn 0.5s ease-out;
+}
+
+.earth-image-text-division {
+    display: block;
+    transform: translateX(-200px) translateY(150px);
+    color: white;
+}
+
+.earth-image-subtext {
+    /* border: 10px wheat solid; */
+    height: fit-content;
+    font-size: large;
+    transform: translateX(20px);
 }
 
 header h1 {
@@ -87,10 +101,15 @@ navbar ul li:hover {
     list-style-type: none;
     width: fit-content;
     margin: 10px;
-    background-color: rgb(72, 72, 72);
+    background-color: #677D6A;
     color: white;
     transition: 0.3s;
     padding: 10px;
+}
+
+navbar ul li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 footer {
@@ -99,6 +118,6 @@ footer {
     margin-top: auto;
 
     padding: 10px;
-    background-color: black;
+    background-color: #1A3636;
     color: white;
 }
