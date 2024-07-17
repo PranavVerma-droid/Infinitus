@@ -8,8 +8,25 @@
     to { transform: translateY(0); opacity: 1; }
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrains-Mono/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
+    /* font-family: 'JetBrains Mono', Arial, sans-serif; */
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -26,6 +43,8 @@ header {
     text-align: center;
     padding: 2rem 0;
     animation: fadeIn 1s ease-in;
+    box-shadow: 0px 2px 30px black;
+    z-index: 2;
 }
 
 h1 {
@@ -53,6 +72,8 @@ nav ul li {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    z-index: 2;
 }
 
 nav ul li:hover {
@@ -81,7 +102,7 @@ section {
     border-radius: 8px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     animation: slideIn 0.5s ease-out;
 }
 
