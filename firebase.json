@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "infinitus",
+    "public": "main",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
