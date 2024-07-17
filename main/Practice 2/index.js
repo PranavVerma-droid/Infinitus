@@ -73,4 +73,35 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     alert("Thank you for Submitting the Form! We Will Get Back to You!");
 });
 
+function animateChat() {
+    const messages = document.querySelectorAll('.chat-message');
+    messages.forEach((msg, index) => {
+        setTimeout(() => {
+            msg.style.animation = 'fadeInTop 0.5s ease-out forwards';
+        }, index * 1000);
+    });
+}
+
+document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        
+        const targetElement = document.getElementById(targetId);
+        targetElement.classList.remove('hidden');
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+        if (targetId === 'how-it-works') {
+            animateChat();
+        }
+    });
+});
+
 document.getElementById('home').classList.remove('hidden');
