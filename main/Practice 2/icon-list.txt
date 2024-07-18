@@ -1,0 +1,15 @@
+fas fa-user
+fas fa-robot
+fas fa-brain
+fas fa-language
+fas fa-industry
+fas fa-eye
+fas fa-heartbeat
+fas fa-chart-line
+fas fa-industry
+fas fa-car
+fas fa-atom
+fas fa-microchip
+fas fa-dna
+fas fa-globe
+fas fa-infinity
